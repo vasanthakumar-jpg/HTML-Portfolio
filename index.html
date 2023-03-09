@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="index.html">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+<!-- 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="CSS/index.css">
+<script src="homej.js"></script>
+
+</head>
+
+<body>
+<nav>
+
+<div id="wrap">
+<nav>
+<div class="logo" ><strong>PORT</strong>FOLIO</div>
+<ul class="links">
+<li><a href="#Home">Home</a></li>
+<li><a href="#About me">About</a></li>
+<li><a href="#Education">Education</a></li>
+<li><a href="#Gallery">Gallery</a></li>
+<li><a href="#Skills">Skills</a></li>
+<li><a href="#Contact">Contact</a></li>
+</ul>
+<button type="button" class="icon-burger">
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"></span>
+</button>
+</nav>
+
+</div>
+</div>
+</nav>
+<script>
+
+const wrap = document.querySelector('#wrap');
+const burger = document.querySelector('.icon-burger');
+
+burger.addEventListener('click', () => {
+if (wrap.classList.contains('nav-opened')) {
+wrap.classList.remove('nav-opened');
+} else {
+wrap.classList.add('nav-opened');
+}
+})
+</script>
+
+<div class="Home" id="Home">
+<div class="image1" >
+<img src="images/f2.jpg" alt="Nature" style="width:1350px;height: 690px;margin-top: 0px;">
+<div class="text-block" style="margin-top: 100px;color: #000428;margin-right: 590px;">
+<h2 >Hello I'm </h2>
+<h1 style="margin-top: 10px;color:white">Vasanthakumar R</h1>
+<h3 style="margin-top: 10px;font-size: 24px; ">The  My Profile API is a set of methods that allows user <br> related information to be displayed on the "my profile page".</h3>
+<br>
+<div>
+<a href="https://www.facebook.com/vasanthvasu.vasanthvasu.98"  class="a1"><i class="icon facebook f icon" style="font-size: 20px;"></i></a>
+<a href="https://www.instagram.com/vasanth_vasu_vv/" class="a2"><i class="icon instagram" style="font-size: 20px;"></i></a>
+<a href="https://twitter.com/home" class="a3"><i class="icon twitter" style="font-size: 20px;text-decoration: none;"></i></a>
+<a href="https://www.whatsapp.com/download//?lang=da" class="a4"><i class="icon whatsapp"style="font-size: 20px;text-decoration:none"></i></a>
+</div>
+<!-- <button style="border:2px solid white;border-radius:10px;background-color:#000428;height:40px;width: 100px;margin-top: 10px;"> 
+<a href="images/New Resume.docx" style="color:white;text-decoration: none;"><i class="icon download"></i> Resume</a></button>  -->
+<button class="btn1"><a href="images/New Resume.docx" style="color:rgba(0, 0, 0, 0.842);text-decoration:none">Resume</a></button>
+</div>
+</div>
+
+</div>
+
+
+<div class="About">
+
+<h1 style="color:#3c5f7e;font-family:serif;"><a id="About me"></a>.</h1>
+<h1 style="text-align:center;color:white;font-family:serif;"><a id="About me"></a>ABOUT ME</h1>
+
+<div class="AM">
+<img src="images/H.webp" alt="" style=" margin-left:10px;border-radius:10px;border:3px;height: 450px;width:450px;box-shadow: 5px solid crimson;">
+</div>
+<div class="par">
+<p style="color:white;font-size:17px">I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. <br>
+I believe that a person should work on developing their professional skills and learning new things all the time. <br>   Currently, I am looking for new career opportunities my current job position cannot provide.</p>
+<button onclick="myFunction()" style="background-color:crimson;color:white;border-radius:10px; border:2px solid white;margin-top:20px;width:100px;height:40px" class="btn">Read more...</button>
+<table style="color:antiquewhite;font-size: 17px;font-family: Georgia;border: none;margin-top: 20px;" id="tb">
+<tr>
+<td> Name </td>
+<td> : Vasanthakumar R </td>
+</tr>
+<br>
+<tr>
+<td> Degree </td>
+<td> : BE CSE </td>
+</tr>
+<br>
+<tr>
+<td> Age </td>
+<td> : 23</td>
+</tr>
+<tr>
+<td> Date of Birth </td>
+<td>: 14/10/1999 </td>
+</tr>
+<tr>
+<td> Phone </td>
+<td> : 7339232817 </td>
+</tr>
+<tr>
+<td> Mail </td>
+<td>: vasanthvv1234@gmail.com</td>
+</tr>
+<tr>
+<td>College </td>
+<td>: Nandha Engineering College </td>
+</tr>
+<tr>
+<td> Native</td>
+<td> : Tirupur</td>
+</tr>
+<tr>
+<td> Nationality</td>
+<td>: Indian</td>
+</tr>
+</table>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+$("#tb").hide()
+});
+$(".btn").click(function(){
+$("#tb").toggle()
+});
+</script>
+<div class="para" style="height: 20px;">
+<h1 style="color:#34536d;"><a id="Education"></a>.</h1>
+</div>
+<div class="education">
+<div class="ui horizontal divider" style="transform: translateY(-40px);">
+<h1 style="color:white;font-family:serif;"><a id="Education"></a>EDUCATION</h1>
+</div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-3"  >
+<img src="images/e2.jpg" alt="" class="sc" >
+
+<span><i class="graduation cap icon" style="color:white;font-size:50px;transform:translate(-30px,100px)"></i></span>
+<p style="color:white;font-size: 20px;text-align: center; ">Vidhyaa Vikas Matric Higher Secondary School.</p>
+<p style="color:white;text-align: center;font-size: 20px;"> SSLC 86%</p>  
+</div>
+<div class="col-sm-3">
+<img src="images/e1.jpg" alt="" class="sc">
+<span><i class="graduation cap icon" style="color:white;font-size:50px;transform:translate(-30px,100px)"></i></span>
+
+<p style="color:white;font-size: 20px;text-align: center; ">Vidhyaa Vikas Matric Higher Secondary School.</p>
+<p style="color:white;text-align: center;font-size: 20px;"> HSC 71%</p>  
+</div>
+<div class="col-sm-3" >
+<img src="images/clg1.jpg" alt="" class="sc" >
+
+<span><i class="graduation cap icon" style="color:white;font-size:50px;transform:translate(-30px,100px)"></i></span>
+<p style="color:white;font-size: 20px;text-align: center; ">Nandha Engineering College.</p>
+<p style="color:white;text-align: center;font-size: 20px;"> CGPA 6.95</p>  
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="image">
+<h1 style="color:#34536d;font-family:  serif;"><a id="Gallery"></a>.</h1>
+<h1 style="text-align:center;color:white;font-family: serif;"><a id="Gallery"></a>GALLERY</h1>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100"  src="images/grp.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/H.webp" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/ab5.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/0.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<div class="skem" style="height: 100px;">
+<p></p>
+<p></p>
+</div>
+
+
+<div id="SKILLS" style="margin-left: 20px; margin-right: 20px;">
+<div style="text-align: center;">
+<h1 style="color:white;font-family:serif;"><a id="Skills"></a>SKILLS</h1>
+</div>
+<img src="images/logo.jpg" alt="" style="height:100px;width:100px;border-radius: 30%;margin-left: 80px;margin-top: 50px;">
+<img src="images/css logo.png" alt="" style="height:100px;width:100px;border-radius: 30%;margin-left: 90px;margin-top: 50px;">
+<img src="images/bootstrap.jpg" alt="" style="height:100px;width:100px;border-radius: 30%;margin-left: 90px;margin-top: 50px;">
+<img src="images/js1.png" alt="" style="height:100px;width:100px;border-radius: 30%;margin-left: 90px;margin-top: 50px;">
+<img src="images/semantic.png" alt="" style="height:100px;width:100px;border-radius: 30%;margin-left: 90px;margin-top: 50px;">
+<img src="images/jquery.png" alt="" style="height:100px;width:100px;border-radius: 30%;margin-left: 90px;margin-top: 50px;">
+
+
+
+<div class="all">
+<!--1st progress-->
+
+<div class="circle-wrap">
+<div class="circle">
+<!--1st part-->
+<div class="mask full-1">
+<div class="fill-1"></div>
+</div>
+<!--2nd part-->
+<div class="mask half">
+
+<div class="fill-1"></div>
+</div>
+<!--count number-->
+<div class="inside-circle">99%</div>
+
+</div>
+</div>
+
+
+<!--2nd progress-->
+<div class="circle-wrap">
+<div class="circle">
+<!--1st part-->
+<div class="mask full-2">
+<div class="fill-2"></div>
+</div>
+<!--2nd part-->
+<div class="mask half">
+<div class="fill-2"></div>
+</div>
+<!--count number-->
+<div class="inside-circle">85%</div>
+
+</div>
+</div>
+<!--3rd progress-->
+<div class="circle-wrap">
+<div class="circle">
+<!--1st part-->
+<div class="mask full-3">
+<div class="fill-3"></div>
+</div>
+<!--2nd part-->
+<div class="mask half">
+<div class="fill-3"></div>
+</div>
+<!--count number-->
+<div class="inside-circle">55%</div>
+
+</div>
+</div>
+<!--4th progress-->
+
+<div class="circle-wrap">
+<div class="circle">
+<!--1st part-->
+<div class="mask full-1">
+<div class="fill-4"></div>
+</div>
+<!--2nd part-->
+<div class="mask half">
+
+<div class="fill-4"></div>
+</div>
+<!--count number-->
+<div class="inside-circle">100%</div>
+
+</div>
+</div>
+
+<!--5th progress-->
+
+<div class="circle-wrap">
+<div class="circle">
+<!--1st part-->
+<div class="mask full-5">
+<div class="fill-5"></div>
+</div>
+<!--2nd part-->
+<div class="mask half">
+
+<div class="fill-5"></div>
+</div>
+<!--count number-->
+<div class="inside-circle">35%</div>
+
+</div>
+</div>
+<!--6th progress-->
+
+<div class="circle-wrap">
+<div class="circle">
+<!--1st part-->
+<div class="mask full-6">
+<div class="fill-6"></div>
+</div>
+<!--2nd part-->
+<div class="mask half">
+
+<div class="fill-6"></div>
+</div>
+<!--count number-->
+<div class="inside-circle">65%</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+<div class="space">
+<p></p>
+</div>
+
+<div class="contact" style="height: 620px;">
+<div class="con-heading">
+<h2 style="color:#243b55;"><a id="Contact"></a>.</h2>
+
+<h2 style="color:white;text-align: center;font-family: serif;"><a id="Contact"></a>CONTACT</h2>
+</div>
+
+<div class="address" style="margin-left:40px;margin-top: 60px;float: left;">
+<p style="color:white;font-size:medium;font-family:Tahoma;"><i class=" home icon"
+style="color: white;"></i>Address</p>
+<p style="color:white;font-size:medium;font-family:Tahoma;margin-left:20px;">8,Bhavani nagar 1st street,</p>
+<p style="color:white;font-size:medium;font-family:Tahoma;margin-left:20px;">pappanayakkan palayam,</p>
+<p style="color:white;font-size:medium;font-family:Tahoma;margin-left:20px;">Tirupur-641607.</p><br><br>
+<p style="color:white;font-size:medium;font-family:Tahoma;"><i class="icon phone" style="color: white;"></i>+91 7339232817</p><br>
+<p style="color:white;font-size:medium;font-family:Tahoma;"><i
+class="  icon envelope" style="color: white;"></i>vasanthakumar141@gmail.com</p>
+</div>
+<div class="map" style="float:left;margin-left:120px;margin-top: 60px;">
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.128860529806!2d77.36455824881698!3d11.103772792061099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba907c353428c3d%3A0x547ac42eaa04c6af!2sBhavani%20Nagar%20Rd%2C%20Bavani%20Nagar%2C%20Tiruppur%2C%20Tamil%20Nadu%20641604!5e0!3m2!1sen!2sin!4v1654250506387!5m2!1sen!2sin"
+width="350" height="300" style="border-radius:10px;" allowfullscreen="" loading="lazy"
+referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="c1" >
+<div class="cont" >
+<form id="registration_form" action="#Home">
+<div>
+<input type="text" id="form_fname" name="" >
+<span class="error_form" id="fname_error_message"></span>
+<label  style="color: white;">
+Name
+</label> 
+</div>
+<!-- <div>
+<input type="text" id="form_sname" name="" required="">
+<span class="error_form" id="sname_error_message"></span>
+<label>
+Second Name
+</label> 
+</div> -->
+<div>
+<input type="phone" id="form_phone" name="" >
+<span class="error_form" id="phone_error_message"></span>
+<label  style="color: white;">Phone no</label> 
+</div>
+<div>
+<input type="email" id="form_email" name="" >
+<span class="error_form" id="email_error_message"></span>
+<label  style="color: white;">Email id</label> 
+</div>
+<div>
+<input type="text" id="form_message" name="">
+<span class="error_form" id="message_error_message"></span>
+<label  style="color: white;">Message</label> 
+</div>
+<!-- <div>
+<input type="password" id="form_password" name="" required="">
+<span class="error_form" id="password_error_message"></span>
+<label>Password</label> 
+</div> -->
+<!-- <div>
+<input type="password" id="form_retype_password" name="" required="">
+<span class="error_form" id="retype_password_error_message"></span>
+<label>Re-Enter Password</label> 
+</div> -->
+<input type="submit" value="Submit" name="">
+</form>
+</div>
+</div>
+
+</div>
+<script type="text/javascript">
+$(function() {
+
+$("#fname_error_message").hide();
+$("#sname_error_message").hide();
+$("#phone_error_message").hide();
+$("#email_error_message").hide();
+$("#message_error_message").hide();
+//   $("#retype_password_error_message").hide();
+
+var error_fname = false;
+var error_sname = false;
+var error_phone = false;
+var error_email = false;
+var error_message = false;
+//   var error_password = false;
+//   var error_retype_password = false;
+
+$("#form_fname").focusout(function(){
+check_fname();
+});
+$("#form_sname").focusout(function() {
+check_sname();
+});
+$("#form_phone").focusout(function() {
+check_phone();
+});
+$("#form_email").focusout(function() {
+check_email();
+}); $("#form_message").focusout(function() {
+check_message();
+});
+//   $("#form_password").focusout(function() {
+//      check_password();
+//   });
+//   $("#form_retype_password").focusout(function() {
+//      check_retype_password();
+//   });
+
+function check_fname() {
+var pattern = /^[a-zA-Z]*$/;
+var fname = $("#form_fname").val();
+if (pattern.test(fname) && fname !== '') {
+$("#fname_error_message").hide();
+$("#form_fname").css("border-bottom","2px solid green");
+} else {
+$("#fname_error_message").html("Should contain only Characters");
+$("#fname_error_message").show();
+$("#form_fname").css("border-bottom","2px solid red");
+error_fname = true;
+}
+}
+
+function check_sname() {
+var pattern = /^[a-zA-Z]*$/;
+var sname = $("#form_sname").val()
+if (pattern.test(sname) && sname !== '') {
+$("#sname_error_message").hide();
+$("#form_sname").css("border-bottom","2px solid #34F458");
+} else {
+$("#sname_error_message").html("Should contain only Characters");
+$("#sname_error_message").show();
+$("#form_sname").css("border-bottom","2px solid #F90A0A");
+error_fname = true;
+}
+}
+
+//   function check_password() {
+//      var password_length = $("#form_password").val().length;
+//      if (password_length < 8) {
+//         $("#password_error_message").html("Atleast 8 Characters");
+//         $("#password_error_message").show();
+//         $("#form_password").css("border-bottom","2px solid red");
+//         error_password = true;
+//      } else {
+//         $("#password_error_message").hide();
+//         $("#form_password").css("border-bottom","2px solid green");
+//      }
+//   }
+
+//   function check_retype_password() {
+//      var password = $("#form_password").val();
+//      var retype_password = $("#form_retype_password").val();
+//      if (password !== retype_password) {
+//         $("#retype_password_error_message").html("Passwords Did not Matched");
+//         $("#retype_password_error_message").show();
+//         $("#form_retype_password").css("border-bottom","2px solid red");
+//         error_retype_password = true;
+//      } else {
+//         $("#retype_password_error_message").hide();
+//         $("#form_retype_password").css("border-bottom","2px solid green");
+//      }
+//   }
+function check_phone() {
+var pattern = (/^[0-9]{10}$/);
+var phone = $("#form_phone").val();
+if (pattern.test(phone) && phone !== '') {
+//   $("#phone_error_message").hide();
+//   $("#form_phone").css("border-bottom","2px solid #34F458");
+$("#phone_error_message").hide();
+$("#form_phone").css("border-bottom","2px solid #34F458");
+
+} else {
+$("#phone_error_message").html("Phone no should be 10 digits");
+//   $("#phone_error_message").show();
+//   $("#form_email").css("border-bottom","2px solid #F90A0A");
+$("#phone_error_message").show();
+$("#form_phone").css("border-bottom","2px solid #F90A0A");
+phone_email = true;
+}
+}
+
+
+function check_email() {
+var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+var email = $("#form_email").val();
+if (pattern.test(email) && email !== '') {
+$("#email_error_message").hide();
+$("#form_email").css("border-bottom","2px solid green");
+} else {
+$("#email_error_message").html("Invalid Email");
+$("#email_error_message").show();
+$("#form_email").css("border-bottom","2px solid red");
+error_email = true;
+}
+}
+function check_message() {
+//   var pattern = /^[a-zA-Z]*$/;
+var pattern = /^([\w-\.]+[\w-]{2,4})?$/;
+
+var message = $("#form_message").val()
+if (pattern.test(message) && message !== '') {
+$("#message_error_message").hide();
+$("#form_message").css("border-bottom","2px solid #34F458");
+} else {
+$("#message_error_message").html("This field is required");
+$("#message_error_message").show();
+$("#form_message").css("border-bottom","2px solid #F90A0A");
+error_message = true;
+}
+}
+
+$("#registration_form").submit(function() {
+error_fname = false;
+error_sname = false;
+error_email = false;
+error_phone = false
+//   error_password = false;
+//   error_retype_password = false;
+
+
+check_fname();
+check_sname();
+check_email();
+check_phone();
+//   check_password();
+//   check_retype_password();
+
+if (error_fname === false && error_sname === false && error_email === false && error_phone === false ) {
+alert("Registration Successfull");
+return true;
+} else {
+alert("Please Fill the form Correctly");
+return false;
+}
+
+});
+});
+</script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/
+jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>-->
+
+<div style="clear:both;height:70px;transform: translateY(-100px);">
+<div style="transform: translateX(560px) ;">
+<a href="https://www.facebook.com/vasanthvasu.vasanthvasu.98"  class="a1"><i class="icon facebook f icon" style="font-size: 20px;transform: translateX(1px);"></i></a>
+
+<a href="https://www.instagram.com/vasanth_vasu_vv/" style="margin-left: 10px;" class="a2"><i class="icon instagram" style="font-size: 20px;transform: translateX(1px)"></i></a>
+<a href="https://twitter.com/home" style="margin-left: 10px;" class="a3"><i class="icon twitter" style="font-size: 20px;text-decoration: none;transform: translateX(1px)"></i></a>
+<a href="https://www.whatsapp.com/download//?lang=da" style="margin-left: 10px;" class="a4"><i class="icon whatsapp"style="font-size: 20px;text-decoration:none;transform: translateX(1px)"></i></a>
+<br>
+<br>
+<ul style="display: flex;transform: translateX(-125px);">
+    <li ><a href="#Home" style="color: white;text-decoration:none">Home</a></li>
+    <li style="margin-left: 20px;"><a href="#About me" style="color: white;text-decoration:none">About</a></li>
+    <li style="margin-left: 20px;"><a href="#Education" style="color: white;text-decoration:none">Education</a></li>
+    <li style="margin-left: 20px;"><a href="#Gallery" style="color: white;text-decoration:none">Gallery</a></li>
+    <li style="margin-left: 20px;"><a href="#Skills" style="color: white;text-decoration:none">Skills</a></li>
+    <li style="margin-left: 20px;"><a href="#Contact" style="color: white;text-decoration:none">Contact</a></li>
+    </ul>
+    <p style="color:white;font-size:15px;transform:translateX(-550px)">&copy;Copyright|Designed by Vasanthakumar</p>
+</div>
+</div>
+
+</body>
+
+</html>
